@@ -1,12 +1,10 @@
 import './App.css';
-import Api from './api'
-
+import RouterPages  from './components/RouterPages';
 function App() {
   return (
     <div className="App">
-      <Api></Api>
+      <RouterPages></RouterPages>
     </div>
   );
 }
-
 export default App;
