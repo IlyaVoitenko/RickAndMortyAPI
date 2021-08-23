@@ -1,38 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.selectedDiv {
+  border: black solid 1px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.liHeader {
+  list-style-type: none;
+}
+.linkHeader {
+  text-decoration: none;
+}
+.footer {
+  position: relative;
+  margin-top: 255px;
+  height: 50px;
+  background-color: cadetblue;
+}
+#inputSearch {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.header {
+  height: 50px;
+  position: relative;
+  background-color: cadetblue;
+}
+.center {
+  text-align: center;
+}
+.container > div {
+  float: left;
+  margin-left: 70px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+@media screen and (max-width: 1025px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 55px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 55px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 55px;
+    margin-top: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 376px) {
+  .App {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .container > div {
+    margin-left: 38px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 8px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 281px) {
+  .App {
+    text-align: center;
+  }
+  .container > div {
+    margin-left: 0.1px;
+    margin-top: 20px;
   }
 }

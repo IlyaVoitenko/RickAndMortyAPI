@@ -1,18 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Api from "./Api";
+import ShowAllPersons from "./ShowAllPersons";
 import SelectedElement from "./SelectedElement";
+import Header from "./Header";
 const RouterPages = () => {
   return (
     <div>
       <Router>
-        <ul>
-          <li>
-            <a href="/">main</a>
-          </li>
-        </ul>
+        <Header></Header>
         <Switch>
-          <Route exact path="/" component={Api} />
+          <Route exact path="/" component={ShowAllPersons} />
           <Route
             exact
             path="/selected-element/:id"

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "./Footer";
 const SelectedElement = () => {
   const [dataPerson, setDataPerson] = useState({});
   let { id } = useParams();
@@ -8,20 +9,20 @@ const SelectedElement = () => {
       .then((data) => data.json())
       .then((data) => {
         setDataPerson(data);
-        console.log(dataPerson);
       });
   }, [id]);
-  useEffect(() => {
-    console.log(dataPerson);
-  }, [dataPerson]);
+  useEffect(() => {}, [dataPerson]);
 
   return (
-    <div key={dataPerson.id}>
-      <img src={dataPerson.image} alt={dataPerson.name}></img>
-      <p>{dataPerson.name}</p>
-      <p>{dataPerson.gender}</p>
-      <p>{dataPerson.origin && dataPerson.origin.name} </p>
-      <p>{dataPerson.status}</p>
+    <div>
+      <div key={dataPerson.id} className="selectedDiv">
+        <img src={dataPerson.image} alt={dataPerson.name}></img>
+        <p>{dataPerson.name}</p>
+        <p>{dataPerson.gender}</p>
+        <p>{dataPerson.origin && dataPerson.origin.name} </p>
+        <p>{dataPerson.status}</p>
+      </div>
+      <Footer></Footer>
     </div>
   );
 };
